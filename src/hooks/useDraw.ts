@@ -58,7 +58,7 @@ export const useDraw = (
       canvasRef.current?.removeEventListener("mousemove", handler);
       window.removeEventListener("mouseup", mouseUpHandler);
     };
-  }, [onDraw]);
+  }, [onDraw, mouseDown]);
 
   return { canvasRef, onMouseDown, clear };
 };
